@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>CES 2023: Nikolai Gad - Sharing Power with Citizens?</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+		<link rel="stylesheet" href="dist/reveal-override.css"/>
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
+	</head>
+	<body>
+		<header><img src="pic/LogoMainBlue2.png" style="width:100% "></header>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="pic/BGMainBlue.gif" style="color:white">
+					<h1  style="color:white">Sharing Power with Citizens?  Political Party’s Support for Democratic Innovations in Danish Local Councils</h1>
+					<p>CES International Conference of Europeanists, Reykjavik, 27. June 2023</p>
+					<p>Nikolai Gad</p>
+					<p>Technical University of Munich, Hochschule für Politik München </p>
+				</section>
+				
+				
+				
+				<section>
+					<h3 style="color: rgb(0,101,189)">Introduction</h3>
+					<section>
+						<h2 class="fragment" data-fragment-index="1">Research Question: </h2>
+						<h3 class="fragment" data-fragment-index="1">Are decisions by political decision makers to adopt democratic innovations in local councils driven by <em>strategic</em> or <em>ideological</em> concerns?</h3>
+					</section>
+					<section>
+						<h2>EXpectations / hypotheses: </h2> 
+						<ol>
+							<li class="fragment">Ideology of mayor does not matter: </li>
+							<ul>
+								<li class="fragment">The adoption of democratic innovations is similar across local councils regardless of whether they are ruled by a social democratic, liberal, or conservative mayor. </li>
+							</ul>
+							<li class="fragment">Strategic concerns of mayor matters: </li>
+							<ul>
+								<li class="fragment">Mayors with large majorities have no incentive to support democratic innovations. </li>
+							</ul>
+							
+						</ol>
+					</section>
+				</section>
+				
+				
+				
+				<section>
+					<h3 style="color: rgb(0,101,189)">Democratic Innovations in Danish Local Councils </h3>
+					<section>
+						<ul>
+							<li class="fragment">"Borgerforslag": <em>Ligth</em> agenda-setting citizens's initiatives (CI's) with no referendums. </li>
+							<li class="fragment">"Borgersamlinger" & "Borgerting": Mini-publics with randomly sampled citizens, rarely institutionalised. </li>
+							<li class="fragment">"Borgerbudgetter": Participatory Budgeting (PB), usually with very limited funds allocated and rarely institutionalised. </li>
+						</ul>
+						<p class="fragment">Based on examples and services listed on local council websites and professional citizen engagement agencies. </p>
+					</section>
+				</section>
+				
+				
+				
+				<section>
+					<h3 style="color: rgb(0,101,189)">Methods </h3>
+					<section>
+						<h2>Mapping DI's in local councils: Automatic scraping of search engines </h2>
+						<ul>
+							<li class="fragment">One out of many ideas to use web scraping. </li>
+							<li class="fragment">Send a lot of search requests and automatically scrape results. </li>
+							<li class="fragment">Obtain a list of every page on website where certain keywords occur. </li>
+							<li class="fragment">Relevant keywords about DI's. </li>
+							<li class="fragment">Needs further validation, but seems to work surprisingly well. </li>
+							<li class="fragment">Current analysis is based on Bing search results, but Google and DuckDuckGo was also tested. </li>
+						</ul>
+					</section>
+				</section>
+				
+				
+				
+				<section>
+					<h3 style="color: rgb(0,101,189)">Preliminary results </h3>
+					<section>
+						<h3>Prevelance of democratic innovations on local council websites </h3>
+						<table class="table table-condensed">
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Mean</th>
+<th align="right">Std.Dev</th>
+<th align="right">Min</th>
+<th align="right">Median</th>
+<th align="right">Max</th>
+<th align="right">N.Valid</th>
+<th align="right">Pct.Valid</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Pages mentioning CI</td>
+<td align="right">16.765306</td>
+<td align="right">29.65882</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">143</td>
+<td align="right">98</td>
+<td align="right">100</td>
+</tr>
+<tr class="even">
+<td align="left">Pages mentioning MP</td>
+<td align="right">10.193878</td>
+<td align="right">29.80232</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">261</td>
+<td align="right">98</td>
+<td align="right">100</td>
+</tr>
+<tr class="odd">
+<td align="left">Pages mentioning PB</td>
+<td align="right">5.316326</td>
+<td align="right">14.42335</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">87</td>
+<td align="right">98</td>
+<td align="right">100</td>
+</tr>
+</tbody>
+</table>
+					</section>
+					<section>
+						<img src="pic/CES2023/hist-DIs.png" style="width:85%;"/>
+					</section>
+					<section>
+						<h3>DI's and ideology </h3>
+						<table class="table table-condensed">
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">Freq</th>
+<th align="right">%</th>
+<th align="right">% Cum.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td align="right">44</td>
+<td align="right">44.90</td>
+<td align="right">44.90</td>
+</tr>
+<tr class="even">
+<td>V</td>
+<td align="right">34</td>
+<td align="right">34.69</td>
+<td align="right">79.59</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td align="right">14</td>
+<td align="right">14.29</td>
+<td align="right">93.88</td>
+</tr>
+<tr class="even">
+<td>SF</td>
+<td align="right">2</td>
+<td align="right">2.04</td>
+<td align="right">95.92</td>
+</tr>
+<tr class="odd">
+<td>B</td>
+<td align="right">1</td>
+<td align="right">1.02</td>
+<td align="right">96.94</td>
+</tr>
+<tr class="even">
+<td>I</td>
+<td align="right">1</td>
+<td align="right">1.02</td>
+<td align="right">97.96</td>
+</tr>
+<tr class="odd">
+<td>otherParties</td>
+<td align="right">1</td>
+<td align="right">1.02</td>
+<td align="right">98.98</td>
+</tr>
+<tr class="even">
+<td>SlesvigskParti</td>
+<td align="right">1</td>
+<td align="right">1.02</td>
+<td align="right">100.00</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td align="right">98</td>
+<td align="right">100.00</td>
+<td align="right">100.00</td>
+</tr>
+</tbody>
+</table>
+					</section>
+					<section>
+						<img src="pic/CES2023/Balloon-ideology.png" style="width:85%" />
+					</section>
+					<section>
+						<h3>DI's and strategy </h3>
+						<img src="pic/CES2023/hist-mayorsPartySize.png" style="width:75%"/>
+					</section>
+					<section>
+						<p>MP: r=-0,17 (p=0,09); PB: r=-0,11 (p=0,3); CI: r=-0,17 (p=0,18)</p>
+						<img src="pic/CES2023/scatter-mayorsPartySize.png" style="width:75%" />
+					</section>
+					<section>
+						<table style="text-align:center; font-size: 0.45em;"><tbody><tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="5"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="5" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="5">MP.mentions</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Party: B</td><td>-6.620</td><td>3.268</td><td>6.159</td><td>7.614</td><td>9.122</td></tr>
+<tr><td style="text-align:left">Party: C</td><td>-1.156</td><td>-1.297</td><td>-3.673</td><td>-4.225</td><td>-4.334</td></tr>
+<tr><td style="text-align:left">Party: I</td><td>-7.824</td><td>-7.164</td><td>-9.933</td><td>-10.118</td><td>-9.893</td></tr>
+<tr><td style="text-align:left">Party: otherParties</td><td>-6.584</td><td>-8.464</td><td>-8.949</td><td>-8.247</td><td>-7.507</td></tr>
+<tr><td style="text-align:left">Party: SF</td><td>-7.485</td><td>-11.539</td><td>-12.675</td><td>-12.643</td><td>-12.285</td></tr>
+<tr><td style="text-align:left">Party: SlesvigskParti</td><td>7.817</td><td>5.091</td><td>-3.009</td><td>-5.989</td><td>-6.178</td></tr>
+<tr><td style="text-align:left">Party: V</td><td>1.988</td><td>4.370</td><td>-0.044</td><td>-0.892</td><td>-0.952</td></tr>
+<tr class="fragment highlight-current-red" data-fragment-index="5"><td style="text-align:left">MayorPerc</td><td>-21.187</td><td>-33.213<sup>*</sup></td><td>-27.591<sup>*</sup></td><td>-27.792<sup>*</sup></td><td>-28.172<sup>*</sup></td></tr>
+<tr class="fragment highlight-current-red" data-fragment-index="1"><td style="text-align:left">Population2023</td><td>0.0003<sup>***</sup></td><td>0.0003<sup>***</sup></td><td>0.0004<sup>***</sup></td><td>0.0004<sup>***</sup></td><td>0.0004<sup>***</sup></td></tr>
+<tr><td style="text-align:left">`Kvadratmeter (m2) pr. indbygger`</td><td>0.0003</td><td>0.00003</td><td>-0.00005</td><td></td><td></td></tr>
+<tr><td style="text-align:left">`Kvadratkilometer (km2)`</td><td class="fragment highlight-current-red" data-fragment-index="2">-0.023<sup>***</sup></td><td class="fragment highlight-current-red" data-fragment-index="2">-0.016<sup>**</sup></td><td>-0.004</td><td></td><td></td></tr>
+<tr><td style="text-align:left">AvrAge</td><td>0.430</td><td>-0.270</td><td>0.337</td><td>0.364</td><td></td></tr>
+<tr><td style="text-align:left">IncomeTaxPrPer</td><td>0.301</td><td>0.632<sup>*</sup></td><td>0.383</td><td>0.424</td><td>0.488<sup>*</sup></td></tr>
+<tr class="fragment highlight-current-red" data-fragment-index="3"><td style="text-align:left">ExpensesPrPer</td><td></td><td>0.821<sup>**</sup></td><td>0.615</td><td>0.643<sup>*</sup></td><td>0.712<sup>**</sup></td></tr>
+<tr class="fragment highlight-current-red" data-fragment-index="2"><td style="text-align:left">CouncilTypeLandkommuner</td><td></td><td></td><td>-10.179</td><td>-12.863</td><td>-10.794<sup>*</sup></td></tr>
+<tr class="fragment highlight-current-red" data-fragment-index="2"><td style="text-align:left">CouncilTypeOplandskommuner</td><td></td><td></td><td>-5.775</td><td>-7.066</td><td>-5.417</td></tr>
+<tr class="fragment highlight-current-red" data-fragment-index="2"><td style="text-align:left">CouncilTypeProvinsbykommuner</td><td></td><td></td><td>-21.602<sup>***</sup></td><td>-23.545<sup>***</sup></td><td>-22.329<sup>***</sup></td></tr>
+<tr class="fragment highlight-current-red" data-fragment-index="2"><td style="text-align:left">CouncilTypeStorbykommuner</td><td></td><td></td><td>-63.371<sup>***</sup></td><td>-65.002<sup>***</sup></td><td>-64.199<sup>***</sup></td></tr>
+<tr><td style="text-align:left">Constant</td><td>-27.991</td><td>-69.953</td><td>-67.684</td><td>-72.966<sup>*</sup></td><td>-65.952<sup>**</sup></td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>98</td><td>98</td><td>98</td><td>98</td><td>98</td></tr>
+<tr class="fragment highlight-current-red" data-fragment-index="4"><td style="text-align:left">R<sup>2</sup></td><td>0.653</td><td>0.672</td><td>0.772</td><td>0.771</td><td>0.770</td></tr>
+<tr class="fragment highlight-current-red" data-fragment-index="4"><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.599</td><td>0.617</td><td>0.720</td><td>0.725</td><td>0.728</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>18.862 (df = 84)</td><td>18.439 (df = 83)</td><td>15.783 (df = 79)</td><td>15.619 (df = 81)</td><td>15.533 (df = 82)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>12.166<sup>***</sup> (df = 13; 84)</td><td>12.172<sup>***</sup> (df = 14; 83)</td><td>14.824<sup>***</sup> (df = 18; 79)</td><td>17.009<sup>***</sup> (df = 16; 81)</td><td>18.337<sup>***</sup> (df = 15; 82)</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="5" style="text-align:right"><sup>*</sup>p&lt;0.1; <sup>**</sup>p&lt;0.05; <sup>***</sup>p&lt;0.01</td></tr>
+</tbody></table>
+					</section>
+				</section>
+				
+				
+				
+				<section>
+					<h3 style="color: rgb(0,101,189)">(Preliminary) Conclusion and next steps </h3>
+					<section>
+						<ul>
+							<li class="fragment">DI has no direct relationship with ideological or strategical concerns of mayors. </li>
+							<li class="fragment">Size of mayor's party has a weak, but significant (p<0,10) correlation with mentions of mini publics. </li>
+							<li class="fragment">This effect persists when controlling for relvant council level variables. </li>
+							<li class="fragment">One percentage point increase of seats in local council to mayor's party, is associated with approx. 30 more mentions of mini publics on local council website. </li>
+							<li class="fragment">So ideology of mayors (at least when dsitinguishing between mainstream ideologies) does not seem to have any efffect. </li>
+							<li class="fragment">Strategic concerns, on the other hand, tends to have an effect on the use of mini publics, but not other DI's.  </li>
+						</ul>
+					</section>
+					<section>
+						<h3>Next steps:</h3>
+						<ul>
+							<li>Validate search scrape results (as a proxy variable for implementing DI's). </li>
+							<li>Rescaling meassures of mentions to make them comparable across cases. </li>
+							<li>Other relevant control variables (gender of mayor/council, distinction between council expenses). </li>
+							<li>Consider other DV's than mayor, fx. the strength of different fringe ideologies in local councils. </li>
+							<li>Study context in which keywords occur on websites. </li>						
+						</ul>
+					</section>
+				</section>
+
+			</div>
+		</div>
+		
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
